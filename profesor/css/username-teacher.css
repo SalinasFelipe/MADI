@@ -30,6 +30,10 @@ body {
   justify-content: space-between;
 }
 
+button {
+  border: none;
+  background-color: #ff8533;
+}
 .settings {
   width: 50px;
   height: 50px;
@@ -232,31 +236,37 @@ nav {
   transition: 1s ease-in-out;
 }
 
-section {
-  display: flex;
+h1 {
+  width: 150px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 20px 0 20px 20px;
+  text-align: center;
+  padding: 10px 10px;
 }
-
-.list-recommendations {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-ol {
+ul {
+  background-color: #ffffff;
+  border-radius: 10px;
   font-size: 30px;
-  text-align: justify;
+  padding: 10px;
+  margin-left: 15px;
 }
 
 li {
   margin: 0 20px 0 20px;
+  list-style: none;
 }
-p {
-  padding: 10px;
-  margin-right: 10px;
-  font-family: "Roboto";
+.container-dates {
+  width: 100%;
 }
 
-.text {
-  margin: 20px 0 0 20px;
+.dates {
+  width: 800px;
+  margin: auto;
+  background-color: #d9d9d9;
+  border-radius: 25px;
+  margin-left: 20px;
 }
 
 footer {
