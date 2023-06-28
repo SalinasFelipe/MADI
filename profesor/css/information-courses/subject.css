@@ -206,19 +206,7 @@ nav {
   margin-top: 10vh;
   color: black;
   font-family: "Quicksand";
-}
-
-.Sign-off {
-  width: 90%;
-  background-color: red;
-  border-radius: 15px;
-  font-size: 25px;
-  margin: auto;
-  text-decoration: none;
-  text-align: center;
-  margin-top: 10px;
-  color: black;
-  font-family: "Quicksand";
+  margin: 10px;
 }
 
 .image-holder {
@@ -231,85 +219,81 @@ nav {
   transition: 1s ease-in-out;
 }
 
-h1 {
-  width: 150px;
-  height: 50px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  margin: 20px 0 20px 20px;
-  text-align: center;
-  padding: 10px 10px;
-}
-.teacher-profile {
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  background-color: #ffffff;
-  border-radius: 15px;
+.container-courses {
+  width: 100%;
+  height: 500px;
+  background-color: #ffff;
+  border-radius: 10px;
+  margin: 20px;
+  font-family: "Roboto";
 }
 
-.container-dates {
-  font-size: 20px;
-  font-family: "Roboto";
+.tittle {
+  margin: 20px;
+  text-align: center;
+  font-family: "Quicksand";
+}
+
+.subject {
+  width: 300px;
+  height: 50px;
+  background-color: #d9d9d9;
   display: flex;
   justify-content: center;
-  margin: 10px 0 20px 0;
-}
-
-label {
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-.image {
-  margin-left: 10px;
-}
-
-.dates {
-  width: 50%;
-  background-color: #d9d9d9;
+  align-items: center;
+  margin: auto;
   border-radius: 10px;
-  text-align: center;
+}
+
+.information {
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.text {
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.information-course {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
 }
 
 .container-information {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10vh;
-  margin-bottom: 20px;
-}
-
-.button-information {
-  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.button-change {
-  border: none;
-  font-size: 20px;
-  background-color: #e9e0d2;
-  border-radius: 10px;
+  margin: 20px;
   padding: 10px;
-  cursor: pointer;
 }
 
-.botton-password {
-  width: 150px;
-  background-color: #e9e0d2;
+.students {
+  background-color: #ffff;
   border-radius: 10px;
   text-decoration: none;
-  text-align: center;
-  margin-left: 10px;
-  font-size: 20px;
-  font-family: "Roboto";
   color: black;
+  padding: 10px;
+  margin: 20px;
 }
 
-.text-advice {
-  font-size: 12px;
-  font-family: "Roboto";
-  margin-right: 20px;
+.teaching-materials {
+  background-color: #ffff;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  margin: 20px;
+}
+
+.image {
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 footer {

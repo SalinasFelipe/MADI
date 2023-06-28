@@ -75,7 +75,6 @@ main {
 
 nav {
   width: 220px;
-  height: 100vh;
   background-color: #ffb380;
 }
 
@@ -88,7 +87,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -111,7 +110,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -133,7 +132,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -156,7 +155,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -200,7 +199,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -242,7 +241,7 @@ section {
   align-items: center;
 }
 ol {
-  font-size: 30px;
+  font-size: 20px;
   text-align: justify;
 }
 
