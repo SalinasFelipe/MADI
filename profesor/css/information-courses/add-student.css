@@ -219,7 +219,13 @@ nav {
   transition: 1s ease-in-out;
 }
 
-.container-students {
+.button-back {
+  display: flex;
+  align-items: end;
+  margin: 0 0 20px 20px;
+}
+
+.container-add-student {
   width: 100%;
   height: 500px;
   background-color: #ffff;
@@ -229,7 +235,7 @@ nav {
   font-family: "Roboto";
 }
 
-.tittle {
+h1 {
   margin: 20px;
   text-align: center;
   font-family: "Quicksand";
@@ -246,51 +252,36 @@ nav {
   border-radius: 10px;
 }
 
-.students {
+.container-two {
   background-color: #d9d9d9;
-  border-radius: 5px;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
 }
-
-.container-add-student {
-  text-align: end;
-  border: none;
-}
-.button {
-  border: none;
-  background-color: #ffff;
-  padding: 10px;
-  border-radius: 10px;
-  margin-right: 20px;
-  margin-bottom: 30px;
+.container-form {
+  display: flex;
+  justify-content: center;
 }
 
-.add-students {
-  border-radius: 10px;
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.text-two {
+  padding: 10px 10px;
+}
+
+.button-add-student {
   text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
 }
 
-.container-name {
-  width: 300px;
+.add-student {
+  border: none;
   background-color: #ffff;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.name-students {
-  margin: auto;
-}
-
-.button-back {
-  display: flex;
-  align-items: end;
-  margin: 0 0 20px 20px;
 }
 
 footer {
