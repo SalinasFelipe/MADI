@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="/profesor/css/information-courses/add-student.css"
+      href="/profesor/css/information-courses/add-materials.css"
     />
     <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
-    <title>Añadir estudiantes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Añadir Material</title>
   </head>
   <body>
     <header class="header">
@@ -93,7 +93,7 @@
 
       <a
         class="button-back"
-        href="/profesor/html/information-courses/subject.html"
+        href="/profesor/html/information-courses/materials.html"
       >
         <img
           class="image"
@@ -103,31 +103,30 @@
           alt="back"
         />
       </a>
-      <div class="container-add-student">
-        <h1>Estudiantes</h1>
-        <span class="subject">Algebra 1</span>
-        <div class="container-two">
-          <div class="container-form">
-            <form action="">
-              <label>Pulsa para subir archivo..</label>
-              <input type="file" name="files" />
-            </form>
-          </div>
+      <div class="container-add-materials">
+        <h1>Material Didactico</h1>
+        <div class="container-form">
+          <form action="">
+            <label
+              >Nombre de material:
+              <input type="text" />
+            </label>
+            <label>
+              Descripcion:
+              <input class="description" type="text" />
+            </label>
+            <label>
+              Subir material:
+              <input type="file" />
+            </label>
 
-          <div class="text">
-            <p class="text-two">
-              Recuerda , solo se selecciona archivos planos, si no sabes como
-              hacerlo, recomendamos revisar el apartado de
-              <em>'TUTORIALES'</em>
-            </p>
-          </div>
-          <div class="button-add-student">
-            <button class="add-student">Añadir estudiante</button>
-          </div>
+            <div class="button-add-student">
+              <button type="submit" class="add-student">Añadir material</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>
-
     <footer>
       <h3>© 2023, Grupo MADI</h3>
     </footer>
