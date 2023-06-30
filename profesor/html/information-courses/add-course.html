@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="/profesor/css/information-courses/add-materials.css"
+      href="/profesor/css/information-courses/add-course.css"
     />
     <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Añadir Material</title>
+    <title>Crear curso</title>
   </head>
   <body>
     <header class="header">
@@ -91,10 +91,7 @@
         </div>
       </nav>
 
-      <a
-        class="button-back"
-        href="/profesor/html/information-courses/materials.html"
-      >
+      <a class="button-back" href="/profesor/html/course-teacher.html">
         <img
           class="image"
           width="50"
@@ -103,25 +100,33 @@
           alt="back"
         />
       </a>
-      <div class="container-add-materials">
+      <div class="container-add-course">
         <h1>Material Didactico</h1>
         <div class="container-form">
           <form action="">
             <label
-              >Nombre de material:
-              <input type="text" />
+              >Nombre de Curso:
+              <input
+                class="name-course"
+                type="text"
+                placeholder="Ingrese el nombre del curso"
+              />
             </label>
             <label>
               Descripcion:
-              <input class="description" type="text" />
+              <input
+                class="description"
+                type="text"
+                placeholder="Ingrese una breve descripcion de lo que se trata el curso"
+              />
             </label>
             <label>
               Subir material:
-              <input type="file" />
+              <input type="date" />
             </label>
 
             <div class="button-add-student">
-              <button type="submit" class="add-student">Añadir material</button>
+              <button type="submit" class="add-student">Crear Curso</button>
             </div>
           </form>
         </div>

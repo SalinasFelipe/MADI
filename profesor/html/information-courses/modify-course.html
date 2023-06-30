@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="/profesor/css/information-courses/add-materials.css"
+      href="/profesor/css/information-courses/modify-course.css"
     />
     <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Añadir Material</title>
+    <title>Modificar el Curso</title>
   </head>
   <body>
     <header class="header">
@@ -76,7 +76,7 @@
             /></span>
           </div>
           <div class="container-support">
-            <a class="support-adjustment" href="/profesor/html/support.html"
+            <a class="support-adjustment" href="/profesor/html/tutoriales/"
               ><span
                 ><img
                   class="image-holder"
@@ -91,10 +91,7 @@
         </div>
       </nav>
 
-      <a
-        class="button-back"
-        href="/profesor/html/information-courses/materials.html"
-      >
+      <a class="button-back" href="/profesor/html/course-teacher.html">
         <img
           class="image"
           width="50"
@@ -103,27 +100,33 @@
           alt="back"
         />
       </a>
-      <div class="container-add-materials">
-        <h1>Material Didactico</h1>
-        <div class="container-form">
-          <form action="">
-            <label
-              >Nombre de material:
-              <input type="text" />
-            </label>
-            <label>
-              Descripcion:
-              <input class="description" type="text" />
-            </label>
-            <label>
-              Subir material:
-              <input type="file" />
-            </label>
 
-            <div class="button-add-student">
-              <button type="submit" class="add-student">Añadir material</button>
-            </div>
-          </form>
+      <div class="container-infor">
+        <div class="information-cour">
+          <label class="name"
+            >Nombre del Curso:
+            <span class="name-cour">Nombre de la materia</span>
+            <img
+              class="renom"
+              src="/Pagine-main/images/editar_nombres.png"
+              alt="Renombrar"
+            />
+          </label>
+
+          <label class="descrip"
+            >Descripcion:
+            <span class="description">va la descripcion del cursp</span>
+            <img
+              class="renom"
+              src="/Pagine-main/images/editar_nombres.png"
+              alt="Renombrar"
+            />
+          </label>
+
+          <label class="time"
+            >Duracion de Curso:
+            <span class="date">aca va la fecha</span>
+          </label>
         </div>
       </div>
     </main>

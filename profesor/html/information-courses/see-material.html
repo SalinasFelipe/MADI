@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="/profesor/css/information-courses/add-materials.css"
+      href="/profesor/css/information-courses/see-material.css"
     />
     <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Añadir Material</title>
+    <title>Material</title>
   </head>
   <body>
     <header class="header">
@@ -103,30 +103,37 @@
           alt="back"
         />
       </a>
-      <div class="container-add-materials">
-        <h1>Material Didactico</h1>
-        <div class="container-form">
-          <form action="">
-            <label
-              >Nombre de material:
-              <input type="text" />
-            </label>
-            <label>
-              Descripcion:
-              <input class="description" type="text" />
-            </label>
-            <label>
-              Subir material:
-              <input type="file" />
-            </label>
 
-            <div class="button-add-student">
-              <button type="submit" class="add-student">Añadir material</button>
-            </div>
-          </form>
+      <div class="container-materials">
+        <h1>Material Didactico</h1>
+        <div>
+          <span class="name-guia">Nombre de la guia</span>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nulla
+            harum error! Iure quod, officia esse ipsum possimus ducimus minus.
+            Porro, autem aspernatur. Explicabo amet excepturi, aut labore
+            laboriosam iure.
+          </p>
+
+          <object
+            class="flat-file"
+            type="application/pdf"
+            data="https://www.todomecanica.com/recursos/introduccion_automovil.pdf"
+          ></object>
+
+          <div class="image-download">
+            <img
+              class="download"
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/download--v1.png"
+              alt="download--v1"
+            />
+          </div>
         </div>
       </div>
     </main>
+
     <footer>
       <h3>© 2023, Grupo MADI</h3>
     </footer>
