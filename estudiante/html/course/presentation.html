@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/profesor/css/tutoriales/tutorials-add.css" />
+    <link rel="stylesheet" href="/estudiante/css/courses/presentation.css" />
     <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
-    <title>Añadir Material</title>
+    <title>materias</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <img class="logo" src="/Pagine-main/images/Madi-Icon.png" alt="logo" />
-        <div class="teacher">
-          <h2 class="tittle-teacher">PROFESOR</h2>
-          <span class="name-teacher">ejemplo nombre del profesor</span>
+        <div class="student">
+          <h2 class="tittle-student">ESTUDIANTES</h2>
+          <span class="name-student">ejemplo nombre del estudiante</span>
         </div>
       </div>
     </header>
@@ -21,7 +21,7 @@
     <main>
       <nav>
         <div class="enlaces">
-          <a href="/profesor/html/recommendations.html" class="home"
+          <a href="/estudiante/html/recomendation-student.html" class="home"
             ><span
               ><img
                 class="image-home"
@@ -31,7 +31,7 @@
                 alt="home--v5" /></span
             >Inicio</a
           >
-          <a href="/profesor/html/username-teacher.html" class="username"
+          <a href="/estudiante/html/username-student.html" class="username"
             ><span
               ><img
                 class=".image-username"
@@ -43,7 +43,7 @@
             </span>
             Perfil</a
           >
-          <a href="/profesor/html/course-teacher.html" class="course"
+          <a href="/estudiante/html/course/course-student.html" class="course"
             ><span
               ><img
                 class="image-course"
@@ -53,7 +53,9 @@
                 alt="e-learning--v1" /></span
             >Cursos</a
           >
-          <a href="/profesor/html/tutoriales/tutorials.html" class="tutorials"
+          <a
+            href="/estudiante/html/tutoriales/tutorials-stu.html"
+            class="tutorials"
             ><span
               ><img
                 class="image-tutorials"
@@ -73,7 +75,9 @@
             /></span>
           </div>
           <div class="container-support">
-            <a class="support-adjustment" href="/profesor/html/support.html"
+            <a
+              class="support-adjustment"
+              href="/estudiante/html/support-stu.html"
               ><span
                 ><img
                   class="image-holder"
@@ -88,22 +92,35 @@
         </div>
       </nav>
 
-      <a class="button-back" href="/profesor/html/tutoriales/tutorials.html">
-        <img
-          class="image"
-          width="50"
-          height="50"
-          src="https://img.icons8.com/ios-filled/50/back.png"
-          alt="back"
-        />
-      </a>
+      <div class="container-courses">
+        <h1 class="tittle">PRESENTACION</h1>
+        <span class="subject">Algebra 1</span>
 
-      <div class="container-video">
-        <h1>Añadir Material</h1>
-
-        <video controls>
-          <source src="/Pagine-main/videos/video-de_prueba.mp4" />
-        </video>
+        <div class="information">
+          <p class="text">
+            Entender el álgebra es fundamentalmente importante para el
+            estudiante, tanto en clase como por fuera de ella. El álgebra
+            agudiza la capacidad de razonamiento del alumno. Los estudiantes
+            pueden resolverse problemas matematicos de forma sucinta y
+            sistematixa.
+          </p>
+          <div class="information-course">
+            <label>Duracion del curso: <span>a</span></label>
+            <label>Profesor: <span>a</span></label>
+          </div>
+          <div class="container-information">
+            <a class="teaching-materials" href="#">Material didactico</a>
+          </div>
+        </div>
+        <a href="/estudiante/html/course/course-student.html">
+          <img
+            class="image"
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/back.png"
+            alt="back"
+          />
+        </a>
       </div>
     </main>
     <footer>

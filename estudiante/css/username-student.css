@@ -195,19 +195,7 @@ nav {
   margin-top: 10vh;
   color: black;
   font-family: "Quicksand";
-}
-
-.Sign-off {
-  width: 90%;
-  background-color: red;
-  border-radius: 15px;
-  font-size: 25px;
-  margin: auto;
-  text-decoration: none;
-  text-align: center;
-  margin-top: 10px;
-  color: black;
-  font-family: "Quicksand";
+  margin: 10px;
 }
 
 .image-holder {

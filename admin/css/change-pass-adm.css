@@ -30,24 +30,13 @@ body {
   justify-content: space-between;
 }
 
-.settings {
-  width: 50px;
-  height: 50px;
-  padding-right: 2px;
-  cursor: pointer;
-}
-
-.teacher {
+.student {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.study {
-  width: 50px;
-}
-
-.tittle-teacher {
+.tittle-student {
   background-color: #ffff;
   border-radius: 12px;
   color: black;
@@ -58,7 +47,7 @@ body {
   font-size: 20px;
 }
 
-.name-teacher {
+.name-student {
   background-color: #ffff;
   border-radius: 12px;
   color: black;
@@ -174,6 +163,29 @@ nav {
   transition: 1s ease-in-out;
 }
 
+.reports {
+  width: 90%;
+  background-color: #ff8533;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  font-family: "Quicksand";
+}
+
+.image-report {
+  width: 35px;
+  padding-right: 10px;
+}
+
+.reports:hover {
+  background-color: #e9e0d2;
+  transition: 1s ease-in-out;
+}
+
 .container-publi {
   width: 200px;
   height: 300px;
@@ -219,6 +231,12 @@ nav {
   transition: 1s ease-in-out;
 }
 
+.button-back {
+  display: flex;
+  align-items: end;
+  margin: 0 0 20px 20px;
+}
+
 h1 {
   width: 150px;
   height: 50px;
@@ -228,76 +246,67 @@ h1 {
   text-align: center;
   padding: 10px 10px;
 }
-.teacher-profile {
-  width: 50%;
-  height: 50%;
+
+.container-form {
+  width: 800px;
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
   margin: auto;
-  background-color: #ffffff;
-  border-radius: 15px;
 }
 
-.container-dates {
-  font-size: 20px;
-  font-family: "Roboto";
+form {
   display: flex;
-  justify-content: center;
-  margin: 10px 0 20px 0;
+  flex-direction: column;
 }
 
 label {
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-.image {
-  margin-left: 10px;
-}
-
-.dates {
-  width: 50%;
-  background-color: #d9d9d9;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.container-information {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10vh;
-  margin-bottom: 20px;
-}
-
-.button-information {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.button-change {
-  border: none;
   font-size: 20px;
-  background-color: #e9e0d2;
-  border-radius: 10px;
-  padding: 10px;
-  cursor: pointer;
+  font-family: "Roboto";
+  margin-top: 10px;
 }
 
-.botton-password {
-  width: 150px;
-  background-color: #e9e0d2;
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: center;
+input {
+  width: 50%;
+  height: 20px;
   margin-left: 10px;
+  border-radius: 10px;
+  background-color: #e9e0d2;
   font-size: 20px;
-  font-family: "Roboto";
-  color: black;
 }
 
-.text-advice {
-  font-size: 12px;
+.eyes-password-one {
+  margin-left: 10px;
+}
+
+.eyes-password-two {
+  margin-left: 20px;
+}
+
+.eyes-password-three {
+  margin-left: 5px;
+}
+
+p {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-family: "Roboto";
-  margin-right: 20px;
+}
+
+.button-password {
+  width: 150px;
+  background-color: #ffb380;
+  border: none;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 footer {

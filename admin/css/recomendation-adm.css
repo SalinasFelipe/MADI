@@ -30,24 +30,13 @@ body {
   justify-content: space-between;
 }
 
-.settings {
-  width: 50px;
-  height: 50px;
-  padding-right: 2px;
-  cursor: pointer;
-}
-
-.teacher {
+.admin {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.study {
-  width: 50px;
-}
-
-.tittle-teacher {
+.tittle-admin {
   background-color: #ffff;
   border-radius: 12px;
   color: black;
@@ -58,7 +47,7 @@ body {
   font-size: 20px;
 }
 
-.name-teacher {
+.name-admin {
   background-color: #ffff;
   border-radius: 12px;
   color: black;
@@ -174,6 +163,29 @@ nav {
   transition: 1s ease-in-out;
 }
 
+.reports {
+  width: 90%;
+  background-color: #ff8533;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  font-family: "Quicksand";
+}
+
+.image-report {
+  width: 35px;
+  padding-right: 10px;
+}
+
+.reports:hover {
+  background-color: #e9e0d2;
+  transition: 1s ease-in-out;
+}
+
 .container-publi {
   width: 200px;
   height: 300px;
@@ -206,6 +218,19 @@ nav {
   margin-top: 10vh;
   color: black;
   font-family: "Quicksand";
+}
+
+.Sign-off {
+  width: 90%;
+  background-color: red;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+  font-family: "Quicksand";
   margin: 10px;
 }
 
@@ -219,85 +244,31 @@ nav {
   transition: 1s ease-in-out;
 }
 
-h1 {
-  width: 150px;
-  height: 50px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  margin: 20px 0 20px 20px;
-  text-align: center;
-  padding: 10px 10px;
-}
-.teacher-profile {
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  background-color: #ffffff;
-  border-radius: 15px;
-}
-
-.container-dates {
-  font-size: 20px;
-  font-family: "Roboto";
+section {
   display: flex;
-  justify-content: center;
-  margin: 10px 0 20px 0;
 }
 
-label {
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-.image {
-  margin-left: 10px;
-}
-
-.dates {
-  width: 50%;
-  background-color: #d9d9d9;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.container-information {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10vh;
-  margin-bottom: 20px;
-}
-
-.button-information {
+.list-recommendations {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.button-change {
-  border: none;
+ol {
   font-size: 20px;
-  background-color: #e9e0d2;
-  border-radius: 10px;
+  text-align: justify;
+}
+
+li {
+  margin: 0 20px 0 20px;
+}
+p {
   padding: 10px;
-  cursor: pointer;
+  margin-right: 10px;
+  font-family: "Roboto";
 }
 
-.botton-password {
-  width: 150px;
-  background-color: #e9e0d2;
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: center;
-  margin-left: 10px;
-  font-size: 20px;
-  font-family: "Roboto";
-  color: black;
-}
-
-.text-advice {
-  font-size: 12px;
-  font-family: "Roboto";
-  margin-right: 20px;
+.text {
+  margin: 20px 0 0 20px;
 }
 
 footer {
