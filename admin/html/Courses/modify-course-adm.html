@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/admin/css/change-pass-adm.css" />
+    <link rel="stylesheet" href="/admin/css/courses/modify-course-admi.css" />
     <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
-    <title>Cambio de contraseña</title>
+    <title>Modificar el Curso</title>
   </head>
   <body>
     <header class="header">
@@ -21,7 +21,7 @@
     <main>
       <nav>
         <div class="enlaces">
-          <a href="/admin/html/recomendation-adm.html" class="home"
+          <a href="/profesor/html/recommendations.html" class="home"
             ><span
               ><img
                 class="image-home"
@@ -31,7 +31,7 @@
                 alt="home--v5" /></span
             >Inicio</a
           >
-          <a href="/admin/html/username-adm.html" class="username"
+          <a href="/profesor/html/username-teacher.html" class="username"
             ><span
               ><img
                 class=".image-username"
@@ -43,7 +43,7 @@
             </span>
             Perfil</a
           >
-          <a href="/admin/html/Courses/courses.html" class="course"
+          <a href="/admin/css/courses/courses.css" class="course"
             ><span
               ><img
                 class="image-course"
@@ -99,7 +99,7 @@
         </div>
       </nav>
 
-      <a class="button-back" href="/admin/html/username-adm.html">
+      <a class="button-back" href="/admin/html/Courses/courses.html">
         <img
           class="image"
           width="50"
@@ -109,61 +109,33 @@
         />
       </a>
 
-      <h1 class="tittle">PERFIL</h1>
-
-      <div class="container-form">
-        <form action="" class="form">
-          <label>
-            Contraseña anterior
-            <input type="password" name="old-password" />
+      <div class="container-infor">
+        <div class="information-cour">
+          <label class="name"
+            >Nombre del Curso:
+            <span class="name-cour">Nombre de la materia</span>
             <img
-              class="eyes-password-one"
-              id="password"
-              width="40"
-              height="40"
-              src="https://img.icons8.com/ios-filled/50/invisible.png"
-              alt="invisible"
+              class="renom"
+              src="/Pagine-main/images/editar_nombres.png"
+              alt="Renombrar"
             />
-
-            <span></span>
           </label>
 
-          <label>
-            Nueva contraseña
-            <input type="password" name="new-password" />
+          <label class="descrip"
+            >Descripcion:
+            <span class="description">va la descripcion del curs0</span>
             <img
-              class="eyes-password-two"
-              id="password"
-              width="40"
-              height="40"
-              src="https://img.icons8.com/ios-filled/50/invisible.png"
-              alt="invisible"
+              class="renom"
+              src="/Pagine-main/images/editar_nombres.png"
+              alt="Renombrar"
             />
-            <span></span>
           </label>
 
-          <label>
-            Confirmacion de contraseña
-            <input type="password" name="confirmation-password" />
-            <img
-              class="eyes-password-three"
-              id="password"
-              width="40"
-              height="40"
-              src="https://img.icons8.com/ios-filled/50/invisible.png"
-              alt="invisible"
-            />
-            <span></span>
+          <label class="time"
+            >Duracion de Curso:
+            <span class="date">aca va la fecha</span>
           </label>
-          <p>
-            Recuerde, que al realizar un cambio de clave debera volver a iniciar
-            sesion
-          </p>
-
-          <button type="submit" class="button-password">
-            Cambiar contraseña
-          </button>
-        </form>
+        </div>
       </div>
     </main>
     <footer>

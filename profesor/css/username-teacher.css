@@ -251,6 +251,7 @@ label {
 
 .image {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .dates {
@@ -274,6 +275,7 @@ label {
 }
 
 .button-change {
+  display: none;
   border: none;
   font-size: 20px;
   background-color: #e9e0d2;

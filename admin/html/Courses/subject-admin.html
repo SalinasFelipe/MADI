@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/admin/css/change-pass-adm.css" />
+    <link rel="stylesheet" href="/admin/css/courses/subject-admin.css" />
     <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
-    <title>Cambio de contraseña</title>
+    <title>materias</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <img class="logo" src="/Pagine-main/images/Madi-Icon.png" alt="logo" />
         <div class="admin">
-          <h2 class="tittle-admin">ADMINISTRADOR</h2>
+          <h2 class="tittle-admin">ADMIN</h2>
           <span class="name-admin">ejemplo nombre del admin</span>
         </div>
       </div>
@@ -99,71 +99,42 @@
         </div>
       </nav>
 
-      <a class="button-back" href="/admin/html/username-adm.html">
-        <img
-          class="image"
-          width="50"
-          height="50"
-          src="https://img.icons8.com/ios-filled/50/back.png"
-          alt="back"
-        />
-      </a>
+      <div class="container-courses">
+        <h1 class="tittle">PRESENTACION</h1>
+        <span class="subject">Algebra 1</span>
 
-      <h1 class="tittle">PERFIL</h1>
-
-      <div class="container-form">
-        <form action="" class="form">
-          <label>
-            Contraseña anterior
-            <input type="password" name="old-password" />
-            <img
-              class="eyes-password-one"
-              id="password"
-              width="40"
-              height="40"
-              src="https://img.icons8.com/ios-filled/50/invisible.png"
-              alt="invisible"
-            />
-
-            <span></span>
-          </label>
-
-          <label>
-            Nueva contraseña
-            <input type="password" name="new-password" />
-            <img
-              class="eyes-password-two"
-              id="password"
-              width="40"
-              height="40"
-              src="https://img.icons8.com/ios-filled/50/invisible.png"
-              alt="invisible"
-            />
-            <span></span>
-          </label>
-
-          <label>
-            Confirmacion de contraseña
-            <input type="password" name="confirmation-password" />
-            <img
-              class="eyes-password-three"
-              id="password"
-              width="40"
-              height="40"
-              src="https://img.icons8.com/ios-filled/50/invisible.png"
-              alt="invisible"
-            />
-            <span></span>
-          </label>
-          <p>
-            Recuerde, que al realizar un cambio de clave debera volver a iniciar
-            sesion
+        <div class="information">
+          <p class="text">
+            Entender el álgebra es fundamentalmente importante para el
+            estudiante, tanto en clase como por fuera de ella. El álgebra
+            agudiza la capacidad de razonamiento del alumno. Los estudiantes
+            pueden resolverse problemas matematicos de forma sucinta y
+            sistematixa.
           </p>
-
-          <button type="submit" class="button-password">
-            Cambiar contraseña
-          </button>
-        </form>
+          <div class="information-course">
+            <label>Duracion del curso: <span>a</span></label>
+            <label>Profesor: <span>a</span></label>
+          </div>
+          <div class="container-information">
+            <a class="students" href="/admin/html/Courses/see-studen-admin.html"
+              >Estudiantes</a
+            >
+            <a
+              class="teaching-materials"
+              href="/admin/html/Courses/materials-admin.html"
+              >Material didactico</a
+            >
+          </div>
+        </div>
+        <a href="/admin/html/Courses/courses.html">
+          <img
+            class="image"
+            width="50"
+            height="50"
+            src="https://img.icons8.com/ios-filled/50/back.png"
+            alt="back"
+          />
+        </a>
       </div>
     </main>
     <footer>

@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/admin/css/change-pass-adm.css" />
+    <link rel="stylesheet" href="/admin/css/courses/courses.css" />
     <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
-    <title>Cambio de contraseña</title>
+    <title>Curso</title>
   </head>
   <body>
     <header class="header">
@@ -99,71 +99,36 @@
         </div>
       </nav>
 
-      <a class="button-back" href="/admin/html/username-adm.html">
-        <img
-          class="image"
-          width="50"
-          height="50"
-          src="https://img.icons8.com/ios-filled/50/back.png"
-          alt="back"
-        />
-      </a>
+      <div class="container-courses">
+        <h1 class="tittle">Cursos</h1>
 
-      <h1 class="tittle">PERFIL</h1>
-
-      <div class="container-form">
-        <form action="" class="form">
-          <label>
-            Contraseña anterior
-            <input type="password" name="old-password" />
+        <div class="subjects">
+          <span>COD: XFC8S93</span>
+          <span class="subject"
+            ><a
+              class="link-subject"
+              href="/admin/html/Courses/subject-admin.html"
+              >Algebra 1</a
+            ></span
+          >
+          <div>
             <img
-              class="eyes-password-one"
-              id="password"
-              width="40"
-              height="40"
-              src="https://img.icons8.com/ios-filled/50/invisible.png"
-              alt="invisible"
+              class="cancel"
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/50/cancel.png"
+              alt="cancel"
             />
 
-            <span></span>
-          </label>
-
-          <label>
-            Nueva contraseña
-            <input type="password" name="new-password" />
-            <img
-              class="eyes-password-two"
-              id="password"
-              width="40"
-              height="40"
-              src="https://img.icons8.com/ios-filled/50/invisible.png"
-              alt="invisible"
-            />
-            <span></span>
-          </label>
-
-          <label>
-            Confirmacion de contraseña
-            <input type="password" name="confirmation-password" />
-            <img
-              class="eyes-password-three"
-              id="password"
-              width="40"
-              height="40"
-              src="https://img.icons8.com/ios-filled/50/invisible.png"
-              alt="invisible"
-            />
-            <span></span>
-          </label>
-          <p>
-            Recuerde, que al realizar un cambio de clave debera volver a iniciar
-            sesion
-          </p>
-
-          <button type="submit" class="button-password">
-            Cambiar contraseña
-          </button>
-        </form>
+            <a href="/admin/html/Courses/modify-course-adm.html">
+              <img
+                class="image-pencil"
+                src="/Pagine-main/images/editar_nombres.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
