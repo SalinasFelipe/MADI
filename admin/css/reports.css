@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e9e0d2;
+}
+
+.header {
+  background-color: #ff8533;
+  height: 100px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.logo {
+  width: 175px;
+  height: 100x;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-left: 15px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tittle-admin {
+  background-color: #ffff;
+  border-radius: 12px;
+  color: black;
+  padding: 10px 10px;
+  margin: auto;
+  margin-right: 10px;
+  font-family: "Quicksand";
+  font-size: 20px;
+}
+
+.name-admin {
+  background-color: #ffff;
+  border-radius: 12px;
+  color: black;
+  padding: 10px 10px;
+  margin: auto;
+  margin-right: 10px;
+  font-family: "Quicksand";
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  width: 220px;
+  background-color: #ffb380;
+}
+
+.enlaces {
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  width: 90%;
+  background-color: #ff8533;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10vh;
+  color: black;
+  font-family: "Quicksand";
+}
+
+.image-home {
+  width: 30px;
+  padding-right: 10px;
+}
+
+.home:hover {
+  background-color: #e9e0d2;
+  transition: 1s ease-in-out;
+}
+
+.username {
+  width: 90%;
+  background-color: #ff8533;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  font-family: "Quicksand";
+}
+
+.image-username {
+  width: 30px;
+}
+
+.username:hover {
+  background-color: #e9e0d2;
+  transition: 1s ease-in-out;
+}
+
+.course {
+  width: 90%;
+  background-color: #ff8533;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  font-family: "Quicksand";
+}
+
+.image-course {
+  width: 35px;
+  padding-right: 10px;
+}
+
+.course.course:hover {
+  background-color: #e9e0d2;
+  transition: 1s ease-in-out;
+}
+
+.tutorials {
+  width: 90%;
+  background-color: #ff8533;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  font-family: "Quicksand";
+}
+
+.image-tutorials {
+  width: 35px;
+  padding-right: 10px;
+}
+
+.tutorials:hover {
+  background-color: #e9e0d2;
+  transition: 1s ease-in-out;
+}
+
+.reports {
+  width: 90%;
+  background-color: #ff8533;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  font-family: "Quicksand";
+}
+
+.image-report {
+  width: 35px;
+  padding-right: 10px;
+}
+
+.reports:hover {
+  background-color: #e9e0d2;
+  transition: 1s ease-in-out;
+}
+
+.container-publi {
+  width: 200px;
+  height: 300px;
+  background-color: #ff8533;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.publicity {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+.container-support {
+  display: flex;
+  flex-direction: column;
+}
+
+.support-adjustment {
+  width: 90%;
+  background-color: #ff8533;
+  border-radius: 15px;
+  font-size: 25px;
+  margin: auto;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10vh;
+  color: black;
+  font-family: "Quicksand";
+  margin: 10px;
+}
+
+.container-reports {
+  width: 90%;
+  background-color: #ffff;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.tittle {
+  width: 200px;
+  height: 50px;
+  background-color: #f3eaea;
+  border-radius: 15px;
+  margin: 20px 0 20px 20px;
+  text-align: center;
+  padding: 10px 10px;
+  font-family: "Quicksand";
+}
+
+.report-course {
+  width: 400px;
+
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  font-family: "Quicksand";
+}
+
+.courses-des {
+  width: 400px;
+  height: 300px;
+  background-color: #e9e0d2;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.mate-report {
+  width: 400px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  font-family: "Quicksand";
+}
+
+.report-mate {
+  width: 400px;
+  height: 300px;
+  background-color: #e9e0d2;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.container-cu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-mate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #ff8533;
+  text-align: center;
+  padding: 30px 30px;
+}
