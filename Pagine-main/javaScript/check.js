@@ -1,6 +1,8 @@
 const nameForm = document.querySelector("[name=username]");
 const lastNameForm = document.querySelector("[name=last-name]");
+const documentForm = document.querySelector("[name = document]");
 const emailForm = document.querySelector("[name=email]");
+const phoneNumberForm = document.querySelector("[name=phone-number]");
 const passwordForm = document.querySelector("[name=password]");
 
 //validate dates empty
@@ -18,7 +20,15 @@ const validationEmpty = (e) => {
   }
 };
 
-//validate name and last-name
+//aca se valida los datos vacidos
+nameForm.addEventListener("blur", validationEmpty);
+lastNameForm.addEventListener("blur", validationEmpty);
+documentForm.addEventListener("blur", validationEmpty);
+emailForm.addEventListener("blur", validationEmpty);
+phoneNumberForm.addEventListener("blur", validationEmpty);
+passwordForm.addEventListener("blur", validationEmpty);
+
+//validate name, last-name and document
 const validates = (e) => {
   const form = e.target;
   const formValue = e.target.value;
@@ -32,6 +42,11 @@ const validates = (e) => {
     form.nextElementSibling.innerHTML = "";
   }
 };
+
+// se valida el nombre, el apellido
+nameForm.addEventListener("input", validates);
+lastNameForm.addEventListener("input", validates);
+documentForm.addEventListener("input", validates);
 
 //validate Email
 const validationEmail = (e) => {
@@ -50,6 +65,9 @@ const validationEmail = (e) => {
   }
 };
 
+//aca se valida el email
+emailForm.addEventListener("input", validationEmail);
+
 //validate password
 const validationPassword = (e) => {
   const form = e.target;
@@ -65,18 +83,5 @@ const validationPassword = (e) => {
   }
 };
 
-//aca se valida los datos vacidos
-nameForm.addEventListener("blur", validationEmpty);
-lastNameForm.addEventListener("blur", validationEmpty);
-emailForm.addEventListener("blur", validationEmpty);
-passwordForm.addEventListener("blur", validationEmpty);
-
-// se valida el nombre, el apellido y contraseña
-nameForm.addEventListener("input", validates);
-lastNameForm.addEventListener("input", validates);
-
 //se valida la longitud de la contraseña
 passwordForm.addEventListener("input", validationPassword);
-
-//aca se valida el email
-emailForm.addEventListener("input", validationEmail);

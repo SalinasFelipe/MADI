@@ -100,7 +100,6 @@ h4 {
   border-radius: 10px;
   background-color: #e9e0d2;
   font-size: 15px;
-  padding-left: 10px;
 }
 
 .botton-check {
@@ -119,4 +118,16 @@ footer {
   background-color: #ff8533;
   text-align: center;
   padding: 30px 30px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand";
+}
+
+.invalid {
+  border: solid 1px red;
+  box-shadow: 0 0 10px red;
 }

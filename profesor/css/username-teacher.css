@@ -249,6 +249,21 @@ label {
   margin-left: 10px;
 }
 
+#nameteacher {
+  border-radius: 10px;
+  display: none;
+}
+
+#last-name {
+  border-radius: 10px;
+  display: none;
+}
+
+#phone {
+  border-radius: 10px;
+  display: none;
+}
+
 .image {
   margin-left: 10px;
   cursor: pointer;
@@ -308,4 +323,16 @@ footer {
   background-color: #ff8533;
   text-align: center;
   padding: 30px 30px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand";
+}
+
+.invalid {
+  border: solid 1px red;
+  box-shadow: 0 0 10px red;
 }

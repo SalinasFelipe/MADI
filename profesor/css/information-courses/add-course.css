@@ -287,3 +287,15 @@ footer {
   text-align: center;
   padding: 30px 30px;
 }
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand";
+}
+
+.invalid {
+  border: solid 1px red;
+  box-shadow: 0 0 10px red;
+}

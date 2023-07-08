@@ -101,7 +101,7 @@
         />
       </a>
       <div class="container-add-course">
-        <h1>Material Didactico</h1>
+        <h1>Crear curso</h1>
         <div class="container-form">
           <form action="">
             <label
@@ -109,19 +109,24 @@
               <input
                 class="name-course"
                 type="text"
+                name="name-cur"
                 placeholder="Ingrese el nombre del curso"
               />
+              <span></span>
             </label>
+
             <label>
               Descripcion:
               <input
                 class="description"
                 type="text"
+                name="descrip"
                 placeholder="Ingrese una breve descripcion de lo que se trata el curso"
               />
+              <span></span>
             </label>
             <label>
-              Subir material:
+              Duracion de curso:
               <input type="date" />
             </label>
 
@@ -135,5 +140,7 @@
     <footer>
       <h3>© 2023, Grupo MADI</h3>
     </footer>
+
+    <script src="/profesor/js/add-course.js"></script>
   </body>
 </html>

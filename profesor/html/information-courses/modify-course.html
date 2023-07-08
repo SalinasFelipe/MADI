@@ -105,9 +105,17 @@
         <div class="information-cour">
           <label class="name"
             >Nombre del Curso:
-            <span class="name-cour">Nombre de la materia</span>
+            <input
+              id="most-input"
+              class="inputs"
+              type="text"
+              name="name-course"
+              value
+            />
+            <span id="remove" class="name-cour">Nombre de la materia</span>
             <img
               class="renom"
+              id="pen-one"
               src="/Pagine-main/images/editar_nombres.png"
               alt="Renombrar"
             />
@@ -115,9 +123,20 @@
 
           <label class="descrip"
             >Descripcion:
-            <span class="description">va la descripcion del cursp</span>
+            <input
+              id="most-input-two"
+              class="inputs-two"
+              type="text"
+              name="descrip-course"
+              value=""
+            />
+
+            <span id="descrip" class="description"
+              >va la descripcion del curso</span
+            >
             <img
               class="renom"
+              id="pen-two"
               src="/Pagine-main/images/editar_nombres.png"
               alt="Renombrar"
             />
@@ -127,11 +146,19 @@
             >Duracion de Curso:
             <span class="date">aca va la fecha</span>
           </label>
+
+          <div class="button-information">
+            <button type="submit" id="button" class="button-change">
+              Modificar curso
+            </button>
+          </div>
         </div>
       </div>
     </main>
     <footer>
       <h3>© 2023, Grupo MADI</h3>
     </footer>
+
+    <script src="/profesor/js/modify-course.js"></script>
   </body>
 </html>

@@ -127,3 +127,15 @@ h4 {
   margin-top: 20px;
   padding: 5px 10px;
 }
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand";
+}
+
+.invalid {
+  border: solid 1px red;
+  box-shadow: 0 0 10px red;
+}
