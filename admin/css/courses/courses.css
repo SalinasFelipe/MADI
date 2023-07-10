@@ -277,6 +277,7 @@ h1 {
 
 .cancel {
   margin: 10px;
+  cursor: pointer;
 }
 
 .image-pencil {

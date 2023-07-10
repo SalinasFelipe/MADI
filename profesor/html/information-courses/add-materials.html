@@ -110,10 +110,12 @@
             <label
               >Nombre de material:
               <input type="text" name="materials" />
+              <span></span>
             </label>
             <label>
               Descripcion:
               <input class="description" type="text" name="descripc" />
+              <span></span>
             </label>
             <label>
               Subir material:
@@ -121,7 +123,9 @@
             </label>
 
             <div class="button-add-student">
-              <button type="submit" class="add-student">Añadir material</button>
+              <button type="submit" class="add-student" name="add-mate">
+                Añadir material
+              </button>
             </div>
           </form>
         </div>
@@ -130,5 +134,7 @@
     <footer>
       <h3>© 2023, Grupo MADI</h3>
     </footer>
+
+    <script src="/profesor/js/add-materials.js"></script>
   </body>
 </html>

@@ -275,6 +275,7 @@ h1 {
 
 .download {
   margin: 20px;
+  cursor: pointer;
 }
 footer {
   width: 100%;

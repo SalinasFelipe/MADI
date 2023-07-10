@@ -1,21 +1,21 @@
-const buttonChan = document.getElementById("button-change");
+const buttonChan = document.getElementById("button");
 
-// esto es para el nombre del  profesor
-const mostrar = document.getElementById("pencil-image");
+//name of student
+const mostImage = document.getElementById("image-one");
+const inputName = document.getElementById("namestudent");
 const removeName = document.getElementById("removename");
-const inputName = document.getElementById("nameteacher");
 
-//esto es para el apellido del profesor
-const mostrar2 = document.getElementById("pencil-image-two");
+//apellido del estudiante
+const mostImageTwo = document.getElementById("image-two");
 const inputLastName = document.getElementById("last-name");
-const removeLastName = document.getElementById("removelast");
+const removeLastName = document.getElementById("removelastname");
 
-//esto es para el celular del profesor
-const mostrar3 = document.getElementById("pencil-image-three");
+//celular del estudiante
+const mostImageThree = document.getElementById("image-three");
 const inputPhone = document.getElementById("phone");
-const removePhone = document.getElementById("cell");
+const removePhone = document.getElementById("removephone");
 
-function mostrarGene(pencil, button, most, remove) {
+function mostSpan(pencil, button, most, remove) {
   pencil.addEventListener("click", function () {
     if (button.style.display == "none") {
       button.style.display = "block";
@@ -29,9 +29,9 @@ function mostrarGene(pencil, button, most, remove) {
   });
 }
 
-mostrarGene(mostrar, buttonChan, inputName, removeName);
-mostrarGene(mostrar2, buttonChan, inputLastName, removeLastName);
-mostrarGene(mostrar3, buttonChan, inputPhone, removePhone);
+mostSpan(mostImage, buttonChan, inputName, removeName);
+mostSpan(mostImageTwo, buttonChan, inputLastName, removeLastName);
+mostSpan(mostImageThree, buttonChan, inputPhone, removePhone);
 
 //validate dates empty
 const validationEmpty = (e) => {

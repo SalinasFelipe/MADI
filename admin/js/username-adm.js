@@ -1,19 +1,14 @@
 const buttonChan = document.getElementById("button-change");
 
-// esto es para el nombre del  profesor
+// esto es para el nombre del  admin
 const mostrar = document.getElementById("pencil-image");
 const removeName = document.getElementById("removename");
-const inputName = document.getElementById("nameteacher");
+const inputName = document.getElementById("nameadmin");
 
 //esto es para el apellido del profesor
 const mostrar2 = document.getElementById("pencil-image-two");
-const inputLastName = document.getElementById("last-name");
-const removeLastName = document.getElementById("removelast");
-
-//esto es para el celular del profesor
-const mostrar3 = document.getElementById("pencil-image-three");
-const inputPhone = document.getElementById("phone");
-const removePhone = document.getElementById("cell");
+const inputLastName = document.getElementById("last-name-adm");
+const removeLastName = document.getElementById("removelastadmin");
 
 function mostrarGene(pencil, button, most, remove) {
   pencil.addEventListener("click", function () {
@@ -31,7 +26,6 @@ function mostrarGene(pencil, button, most, remove) {
 
 mostrarGene(mostrar, buttonChan, inputName, removeName);
 mostrarGene(mostrar2, buttonChan, inputLastName, removeLastName);
-mostrarGene(mostrar3, buttonChan, inputPhone, removePhone);
 
 //validate dates empty
 const validationEmpty = (e) => {
@@ -67,19 +61,3 @@ const validates = (e) => {
 
 inputName.addEventListener("input", validates);
 inputLastName.addEventListener("input", validates);
-
-//validate phone number
-const validatesPhone = (e) => {
-  const form = e.target;
-  const formValue = e.target.value;
-  if (formValue.trim().length < 9) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
-  } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
-  }
-};
-
-inputPhone.addEventListener("input", validatesPhone);

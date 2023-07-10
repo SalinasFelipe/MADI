@@ -261,8 +261,19 @@ label {
   margin-left: 10px;
 }
 
+#nameadmin {
+  border-radius: 10px;
+  display: none;
+}
+
+#last-name-adm {
+  border-radius: 10px;
+  display: none;
+}
+
 .image {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .dates {
@@ -292,6 +303,7 @@ label {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
+  display: none;
 }
 
 .botton-password {
@@ -318,4 +330,16 @@ footer {
   background-color: #ff8533;
   text-align: center;
   padding: 30px 30px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand";
+}
+
+.invalid {
+  border: solid 1px red;
+  box-shadow: 0 0 10px red;
 }

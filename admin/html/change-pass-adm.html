@@ -115,10 +115,10 @@
         <form action="" class="form">
           <label>
             Contraseña anterior
-            <input type="password" name="old-password" />
+            <input type="password" name="old-password" id="passwords" />
             <img
               class="eyes-password-one"
-              id="password"
+              id="password-one"
               width="40"
               height="40"
               src="https://img.icons8.com/ios-filled/50/invisible.png"
@@ -130,10 +130,10 @@
 
           <label>
             Nueva contraseña
-            <input type="password" name="new-password" />
+            <input type="password" name="new-password" id="new-pass" />
             <img
               class="eyes-password-two"
-              id="password"
+              id="password-two"
               width="40"
               height="40"
               src="https://img.icons8.com/ios-filled/50/invisible.png"
@@ -144,10 +144,14 @@
 
           <label>
             Confirmacion de contraseña
-            <input type="password" name="confirmation-password" />
+            <input
+              type="password"
+              name="confirmation-password"
+              id="confi-pass"
+            />
             <img
               class="eyes-password-three"
-              id="password"
+              id="password-three"
               width="40"
               height="40"
               src="https://img.icons8.com/ios-filled/50/invisible.png"
@@ -169,5 +173,7 @@
     <footer>
       <h3>© 2023, Grupo MADI</h3>
     </footer>
+
+    <script src="/admin/js/change-pass-adm.js"></script>
   </body>
 </html>

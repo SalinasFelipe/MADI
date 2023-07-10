@@ -257,14 +257,17 @@ input {
 
 .eyes-password-one {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .eyes-password-two {
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .eyes-password-three {
   margin-left: 5px;
+  cursor: pointer;
 }
 
 p {
@@ -292,4 +295,16 @@ footer {
   background-color: #ff8533;
   text-align: center;
   padding: 30px 30px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand";
+}
+
+.invalid {
+  border: solid 1px red;
+  box-shadow: 0 0 10px red;
 }

@@ -46,7 +46,23 @@ const validates = (e) => {
 // se valida el nombre, el apellido
 nameForm.addEventListener("input", validates);
 lastNameForm.addEventListener("input", validates);
-documentForm.addEventListener("input", validates);
+
+//validate document
+const validatesDocumen = (e) => {
+  const form = e.target;
+  const formValue = e.target.value;
+  if (formValue.trim().length < 3) {
+    form.classList.add("invalid");
+    form.nextElementSibling.classList.add("error");
+    form.nextElementSibling.innerHTML = `please type well the ${form.name} ;`;
+  } else {
+    form.classList.remove("invalid");
+    form.nextElementSibling.classList.remove("error");
+    form.nextElementSibling.innerHTML = "";
+  }
+};
+
+documentForm.addEventListener("input", validatesDocumen);
 
 //validate Email
 const validationEmail = (e) => {

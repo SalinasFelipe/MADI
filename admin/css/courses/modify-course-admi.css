@@ -252,6 +252,20 @@ nav {
   padding: 10px;
 }
 
+.inputs {
+  border-radius: 10px;
+  display: none;
+  width: 300px;
+  padding: 5px;
+}
+
+.inputs-two {
+  border-radius: 10px;
+  height: 200px;
+  width: 500px;
+  display: none;
+}
+
 .name {
   display: flex;
   justify-content: space-between;
@@ -280,10 +294,25 @@ nav {
 .renom {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 .date {
   padding-left: 10px;
+}
+
+.button-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-change {
+  border: none;
+  background-color: #e9e0d2;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
 }
 
 footer {
@@ -292,4 +321,16 @@ footer {
   background-color: #ff8533;
   text-align: center;
   padding: 30px 30px;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand";
+}
+
+.invalid {
+  border: solid 1px red;
+  box-shadow: 0 0 10px red;
 }
