@@ -12,7 +12,7 @@ const removeLastName = document.getElementById("removelastname");
 
 //celular del estudiante
 const mostImageThree = document.getElementById("image-three");
-const inputPhone = document.getElementById("phone");
+const inputPhone = document.getElementById("cellstudent");
 const removePhone = document.getElementById("removephone");
 
 function mostSpan(pencil, button, most, remove) {
@@ -33,17 +33,25 @@ mostSpan(mostImage, buttonChan, inputName, removeName);
 mostSpan(mostImageTwo, buttonChan, inputLastName, removeLastName);
 mostSpan(mostImageThree, buttonChan, inputPhone, removePhone);
 
-//validate dates empty
-const validationEmpty = (e) => {
-  const form = e.target;
-  const formValue = e.target.value;
-  if (formValue.trim().length === 0) {
+const setErrors = (form, isError = true) => {
+  if (isError) {
     form.classList.add("invalid");
     form.nextElementSibling.classList.add("error");
   } else {
     form.classList.remove("invalid");
     form.nextElementSibling.classList.remove("error");
     form.nextElementSibling.innerHTML = "";
+  }
+};
+
+//validate dates empty
+const validationEmpty = (e) => {
+  const form = e.target;
+  const formValue = e.target.value;
+  if (formValue.trim().length === 0) {
+    setErrors(form);
+  } else {
+    setErrors(form, false);
   }
 };
 
@@ -56,12 +64,9 @@ const validates = (e) => {
   const form = e.target;
   const formValue = e.target.value;
   if (formValue.trim().length < 3) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
+    setErrors(form);
   } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
+    setErrors(form, false);
   }
 };
 
@@ -73,12 +78,9 @@ const validatesPhone = (e) => {
   const form = e.target;
   const formValue = e.target.value;
   if (formValue.trim().length < 9) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
+    setErrors(form);
   } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
+    setErrors(form, false);
   }
 };
 

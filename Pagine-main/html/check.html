@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../images/IconMADI.jpg" />
+    <link rel="icon" href="/Pagine-main/css/check.css" />
     <link rel="stylesheet" href="../css/check.css" />
-    <title>Registrase</title>
+    <title>Registrarse</title>
   </head>
   <body>
     <header class="header">
@@ -57,7 +57,7 @@
             <h4>Documento:</h4>
             <input
               class="inputs"
-              type="text"
+              type="number"
               name="document"
               placeholder="Ingrese su No° Documento"
               maxlength="20"
@@ -82,7 +82,7 @@
 
             <input
               class="inputs"
-              type="text"
+              type="number"
               name="phone-number"
               placeholder="Ingrese su No° Celular"
               maxlength="13"
@@ -91,20 +91,21 @@
           </label>
 
           <label>
-            <h4>contraseña nueva:</h4>
+            <h4>Contraseña nueva:</h4>
             <input
               class="inputs"
-              type="pass"
+              type="password"
               name="password"
               placeholder="Ingrese la nueva contraseña"
               maxlength="45"
             />
             <span></span>
           </label>
-
           <!-- submit es para los registros -->
 
-          <button type="submit" class="botton-check">registrarse</button>
+          <button type="submit" id="button" class="botton-check">
+            registrarse
+          </button>
         </form>
       </section>
     </div>

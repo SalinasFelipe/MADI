@@ -249,6 +249,12 @@ label {
   margin-left: 10px;
 }
 
+.form input[type="number"]::-webkit-inner-spin-button,
+.form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #nameteacher {
   border-radius: 10px;
   display: none;

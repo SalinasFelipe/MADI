@@ -5,11 +5,8 @@ const emailForm = document.querySelector("[name=email]");
 const phoneNumberForm = document.querySelector("[name=phone-number]");
 const passwordForm = document.querySelector("[name=password]");
 
-//validate dates empty
-const validationEmpty = (e) => {
-  const form = e.target;
-  const formValue = e.target.value;
-  if (formValue.trim().length === 0) {
+const setErrors = (form, isError = true) => {
+  if (isError) {
     form.classList.add("invalid");
     form.nextElementSibling.classList.add("error");
     form.nextElementSibling.innerHTML = `${form.name} is required;`;
@@ -20,6 +17,17 @@ const validationEmpty = (e) => {
   }
 };
 
+//validate dates empty
+const validationEmpty = (e) => {
+  const form = e.target;
+  const formValue = e.target.value;
+  if (formValue.trim().length === 0) {
+    setErrors(form);
+  } else {
+    setErrors(form, false);
+  }
+};
+
 //aca se valida los datos vacidos
 nameForm.addEventListener("blur", validationEmpty);
 lastNameForm.addEventListener("blur", validationEmpty);
@@ -27,38 +35,32 @@ documentForm.addEventListener("blur", validationEmpty);
 emailForm.addEventListener("blur", validationEmpty);
 phoneNumberForm.addEventListener("blur", validationEmpty);
 passwordForm.addEventListener("blur", validationEmpty);
+buttonSub.addEventListener("submit", validationEmpty);
 
 //validate name, last-name and document
 const validates = (e) => {
   const form = e.target;
   const formValue = e.target.value;
   if (formValue.trim().length < 3) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
-    form.nextElementSibling.innerHTML = `please type well the ${form.name} ;`;
+    setErrors(form);
   } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
+    setErrors(form, false);
   }
 };
 
 // se valida el nombre, el apellido
 nameForm.addEventListener("input", validates);
 lastNameForm.addEventListener("input", validates);
+buttonSub.addEventListener("submit", validates);
 
 //validate document
 const validatesDocumen = (e) => {
   const form = e.target;
   const formValue = e.target.value;
   if (formValue.trim().length < 3) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
-    form.nextElementSibling.innerHTML = `please type well the ${form.name} ;`;
+    setErrors(form);
   } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
+    setErrors(form, false);
   }
 };
 
@@ -71,13 +73,9 @@ const validationEmail = (e) => {
   const regex = new RegExp(/^[\w-\.]+@([\w-])+\.[\w-]{2,4}$/);
 
   if (formValue.trim().length > 5 && !regex.test(formValue)) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
-    form.nextElementSibling.innerHTML = `Please enter a valid email`;
+    setErrors(form, `Please enter a valid email`);
   } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
+    setErrors(form, false);
   }
 };
 
@@ -89,13 +87,9 @@ const validationPassword = (e) => {
   const form = e.target;
   const formValue = e.target.value;
   if (formValue.trim().length < 8) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
-    form.nextElementSibling.innerHTML = `please type well ${form.name}`;
+    setErrors(form);
   } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
+    setErrors(form, false);
   }
 };
 

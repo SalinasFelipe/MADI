@@ -27,11 +27,8 @@ function mostrarGene(pencil, button, most, remove) {
 mostrarGene(pencil, button, mostInput, spanRemove);
 mostrarGene(pencilTwo, button, mostInputTwo, spanRemoveTwo);
 
-//validate dates empty
-const validationEmpty = (e) => {
-  const form = e.target;
-  const formValue = e.target.value;
-  if (formValue.trim().length === 0) {
+const setErrors = (form, isError = true) => {
+  if (isError) {
     form.classList.add("invalid");
     form.nextElementSibling.classList.add("error");
   } else {
@@ -41,5 +38,30 @@ const validationEmpty = (e) => {
   }
 };
 
+//validate dates empty
+const validationEmpty = (e) => {
+  const form = e.target;
+  const formValue = e.target.value;
+  if (formValue.trim().length === 0) {
+    setErrors(form);
+  } else {
+    setErrors(form, false);
+  }
+};
+
 mostInput.addEventListener("blur", validationEmpty);
 mostInputTwo.addEventListener("blur", validationEmpty);
+
+//validate name and description
+const validates = (e) => {
+  const form = e.target;
+  const formValue = e.target.value;
+  if (formValue.trim().length < 3) {
+    setErrors(form);
+  } else {
+    setErrors(form, false);
+  }
+};
+
+mostInput.addEventListener("input", validationEmpty);
+mostInputTwo.addEventListener("input", validationEmpty);

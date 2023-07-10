@@ -33,17 +33,26 @@ mostrarGene(mostrar, buttonChan, inputName, removeName);
 mostrarGene(mostrar2, buttonChan, inputLastName, removeLastName);
 mostrarGene(mostrar3, buttonChan, inputPhone, removePhone);
 
+const setErrors = (form, isError = true) => {
+  if (isError) {
+    form.classList.add("invalid");
+    form.nextElementSibling.classList.add("error");
+    form.nextElementSibling.innerHTML = ` is required;`;
+  } else {
+    form.classList.remove("invalid");
+    form.nextElementSibling.classList.remove("error");
+    form.nextElementSibling.innerHTML = "";
+  }
+};
+
 //validate dates empty
 const validationEmpty = (e) => {
   const form = e.target;
   const formValue = e.target.value;
   if (formValue.trim().length === 0) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
+    setErrors(form);
   } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
+    setErrors(form, false);
   }
 };
 
@@ -56,12 +65,9 @@ const validates = (e) => {
   const form = e.target;
   const formValue = e.target.value;
   if (formValue.trim().length < 3) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
+    setErrors(form);
   } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
+    setErrors(form, false);
   }
 };
 
@@ -73,12 +79,9 @@ const validatesPhone = (e) => {
   const form = e.target;
   const formValue = e.target.value;
   if (formValue.trim().length < 9) {
-    form.classList.add("invalid");
-    form.nextElementSibling.classList.add("error");
+    setErrors(form);
   } else {
-    form.classList.remove("invalid");
-    form.nextElementSibling.classList.remove("error");
-    form.nextElementSibling.innerHTML = "";
+    setErrors(form, false);
   }
 };
 

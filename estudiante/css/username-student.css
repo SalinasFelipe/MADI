@@ -233,12 +233,13 @@ h1 {
   margin: 10px 0 20px 0;
 }
 
-#namestudent {
-  border-radius: 10px;
-  display: none;
+.form input[type="number"]::-webkit-inner-spin-button,
+.form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-#name-stu {
+#namestudent {
   border-radius: 10px;
   display: none;
 }
@@ -248,7 +249,7 @@ h1 {
   display: none;
 }
 
-#phone {
+#cellstudent {
   border-radius: 10px;
   display: none;
 }
