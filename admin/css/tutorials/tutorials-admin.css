@@ -30,13 +30,13 @@ body {
   justify-content: space-between;
 }
 
-.teacher {
+.admin {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.tittle-teacher {
+.tittle-admin {
   background-color: #ffff;
   border-radius: 12px;
   color: black;
@@ -47,7 +47,7 @@ body {
   font-size: 20px;
 }
 
-.name-teacher {
+.name-admin {
   background-color: #ffff;
   border-radius: 12px;
   color: black;
