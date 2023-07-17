@@ -1,5 +1,4 @@
-const typeUsu = document.querySelector("[name= type]");
-const email = document.querySelector("[name= username]");
+const email = document.querySelector("[name= email]");
 const password = document.querySelector("[name= password]");
 
 const setErrors = (form, isError = true) => {
@@ -25,7 +24,6 @@ const validationEmpty = (e) => {
   }
 };
 
-typeUsu.addEventListener("blur", validationEmpty);
 email.addEventListener("blur", validationEmpty);
 password.addEventListener("blur", validationEmpty);
 
@@ -54,3 +52,5 @@ const validationPassword = (e) => {
     setError(form, false);
   }
 };
+
+password.addEventListener("input", validationPassword);

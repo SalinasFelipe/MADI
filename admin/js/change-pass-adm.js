@@ -1,7 +1,3 @@
-const mostImage = document.getElementById("password-one");
-const mostImageTwo = document.getElementById("password-two");
-const mostImageThree = document.getElementById("password-three");
-
 //inputs
 const mostPass = document.getElementById("passwords");
 const newPass = document.getElementById("new-pass");

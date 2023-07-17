@@ -1,29 +1,7 @@
-const mostImage = document.getElementById("password-one");
-const mostImageTwo = document.getElementById("password-two");
-const mostImageThree = document.getElementById("password-three");
-
 //inputs
 const mostPass = document.getElementById("passwords");
 const newPass = document.getElementById("new-pass");
 const confiPass = document.getElementById("confi-pass");
-
-const showPassword = () => {
-  mostPass.type = mostPass.type === "password" ? "text" : "password";
-};
-
-mostImage.addEventListener("click", showPassword);
-
-const showPasswordTwo = () => {
-  newPass.type = newPass.type === "password" ? "text" : "password";
-};
-
-mostImageTwo.addEventListener("click", showPasswordTwo);
-
-const showPasswordThree = () => {
-  confiPass.type = confiPass.type === "password" ? "text" : "password";
-};
-
-mostImageThree.addEventListener("click", showPasswordThree);
 
 const setErrors = (form, isError = true) => {
   if (isError) {

@@ -9,7 +9,7 @@ const setErrors = (form, isError = true) => {
   if (isError) {
     form.classList.add("invalid");
     form.nextElementSibling.classList.add("error");
-    form.nextElementSibling.innerHTML = `${form.name} is required;`;
+    form.nextElementSibling.innerHTML = `${form.name} is required`;
   } else {
     form.classList.remove("invalid");
     form.nextElementSibling.classList.remove("error");
@@ -35,9 +35,8 @@ documentForm.addEventListener("blur", validationEmpty);
 emailForm.addEventListener("blur", validationEmpty);
 phoneNumberForm.addEventListener("blur", validationEmpty);
 passwordForm.addEventListener("blur", validationEmpty);
-buttonSub.addEventListener("submit", validationEmpty);
 
-//validate name, last-name and document
+//validate name, last-name
 const validates = (e) => {
   const form = e.target;
   const formValue = e.target.value;
@@ -51,13 +50,12 @@ const validates = (e) => {
 // se valida el nombre, el apellido
 nameForm.addEventListener("input", validates);
 lastNameForm.addEventListener("input", validates);
-buttonSub.addEventListener("submit", validates);
 
 //validate document
 const validatesDocumen = (e) => {
   const form = e.target;
   const formValue = e.target.value;
-  if (formValue.trim().length < 3) {
+  if (formValue.trim().length < 5) {
     setErrors(form);
   } else {
     setErrors(form, false);

@@ -278,18 +278,6 @@ input {
   font-size: 20px;
 }
 
-.eyes-password-one {
-  margin-left: 10px;
-}
-
-.eyes-password-two {
-  margin-left: 20px;
-}
-
-.eyes-password-three {
-  margin-left: 5px;
-}
-
 p {
   display: flex;
   justify-content: end;
