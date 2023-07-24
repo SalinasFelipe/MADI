@@ -19,7 +19,7 @@ body {
 
 .logo {
   width: 175px;
-  height: 100x;
+
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 10px 10px;
@@ -30,10 +30,6 @@ body {
   justify-content: space-between;
 }
 
-button {
-  border: none;
-  background-color: #ff8533;
-}
 .settings {
   width: 50px;
   height: 50px;
@@ -79,7 +75,6 @@ main {
 
 nav {
   width: 220px;
-  height: 100vh;
   background-color: #ffb380;
 }
 
@@ -92,7 +87,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -115,7 +110,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -137,7 +132,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -160,7 +155,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -204,7 +199,7 @@ nav {
   width: 90%;
   background-color: #ff8533;
   border-radius: 15px;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   text-decoration: none;
   text-align: center;
@@ -224,6 +219,7 @@ nav {
   margin-top: 10px;
   color: black;
   font-family: "Quicksand";
+  margin: 10px;
 }
 
 .image-holder {
@@ -246,7 +242,7 @@ section {
   align-items: center;
 }
 ol {
-  font-size: 30px;
+  font-size: 20px;
   text-align: justify;
 }
 

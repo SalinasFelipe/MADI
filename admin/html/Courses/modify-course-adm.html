@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/admin/css/courses/modify-course-admi.css" />
+    <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
+    <title>Modificar el Curso</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img class="logo" src="/Pagine-main/images/Madi-Icon.png" alt="logo" />
+        <div class="admin">
+          <h2 class="tittle-admin">ADMINISTRADOR</h2>
+          <span class="name-admin">ejemplo nombre del admin</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <nav>
+        <div class="enlaces">
+          <a href="/profesor/html/recommendations.html" class="home"
+            ><span
+              ><img
+                class="image-home"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/home--v5.png"
+                alt="home--v5" /></span
+            >Inicio</a
+          >
+          <a href="/profesor/html/username-teacher.html" class="username"
+            ><span
+              ><img
+                class=".image-username"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/user--v1.png"
+                alt="user--v1"
+              />
+            </span>
+            Perfil</a
+          >
+          <a href="/admin/css/courses/courses.css" class="course"
+            ><span
+              ><img
+                class="image-course"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/e-learning--v1.png"
+                alt="e-learning--v1" /></span
+            >Cursos</a
+          >
+          <a href="/admin/html/tutorials/tutorials-admin.html" class="tutorials"
+            ><span
+              ><img
+                class="image-tutorials"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/tv--v1.png"
+                alt="tv--v1" /></span
+            >Tutoriales</a
+          >
+
+          <a href="/admin/html/reports.html" class="reports"
+            ><span
+              ><img
+                class="image-report"
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/documents.png"
+                alt="documents" /></span
+            >Reportes</a
+          >
+
+          <div class="container-publi">
+            <span
+              ><img
+                class="publicity"
+                src="/Pagine-main/images/image.png"
+                alt=""
+            /></span>
+          </div>
+          <div class="container-support">
+            <a class="support-adjustment" href="/admin/html/support-admin.html"
+              ><span
+                ><img
+                  class="image-holder"
+                  width="24"
+                  height="24"
+                  src="https://img.icons8.com/material/24/customer-support--v1.png"
+                  alt="customer-support--v1"
+              /></span>
+              Soporte</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <a class="button-back" href="/admin/html/Courses/courses.html">
+        <img
+          class="image"
+          width="50"
+          height="50"
+          src="https://img.icons8.com/ios-filled/50/back.png"
+          alt="back"
+        />
+      </a>
+
+      <div class="container-infor">
+        <div class="information-cour">
+          <form action="">
+            <label class="name"
+              >Nombre del Curso:
+              <input
+                id="most-input"
+                class="inputs"
+                type="text"
+                name="name-course"
+                value
+              />
+              <span id="remove" class="name-cour">Nombre de la materia</span>
+              <img
+                class="renom"
+                id="pen-one"
+                src="/Pagine-main/images/editar_nombres.png"
+                alt="Renombrar"
+              />
+            </label>
+
+            <label class="descrip"
+              >Descripcion:
+              <input
+                id="most-input-two"
+                class="inputs-two"
+                type="text"
+                name="descrip-course"
+                value=""
+              />
+              <span id="descrip" class="description"
+                >va la descripcion del curso</span
+              >
+              <img
+                class="renom"
+                id="pen-two"
+                src="/Pagine-main/images/editar_nombres.png"
+                alt="Renombrar"
+              />
+            </label>
+
+            <label class="time"
+              >Duracion de Curso:
+              <span class="date">aca va la fecha</span>
+            </label>
+
+            <div class="button-information">
+              <button type="submit" id="button" class="button-change">
+                Modificar curso
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h3>© 2023, Grupo MADI</h3>
+    </footer>
+
+    <script src="/admin/js/modify-cur-adm.js"></script>
+  </body>
+</html>

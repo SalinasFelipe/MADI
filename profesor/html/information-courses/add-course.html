@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/profesor/css/information-courses/add-course.css"
+    />
+    <link rel="icon" href="/Pagine-main/images/IconMADI.jpg" />
+    <title>Crear curso</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img class="logo" src="/Pagine-main/images/Madi-Icon.png" alt="logo" />
+        <div class="teacher">
+          <h2 class="tittle-teacher">PROFESOR</h2>
+          <span class="name-teacher">ejemplo nombre del profesor</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <nav>
+        <div class="enlaces">
+          <a href="/profesor/html/recommendations.html" class="home"
+            ><span
+              ><img
+                class="image-home"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/home--v5.png"
+                alt="home--v5" /></span
+            >Inicio</a
+          >
+          <a href="/profesor/html/username-teacher.html" class="username"
+            ><span
+              ><img
+                class=".image-username"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/user--v1.png"
+                alt="user--v1"
+              />
+            </span>
+            Perfil</a
+          >
+          <a href="/profesor/html/course-teacher.html" class="course"
+            ><span
+              ><img
+                class="image-course"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/e-learning--v1.png"
+                alt="e-learning--v1" /></span
+            >Cursos</a
+          >
+          <a href="/profesor/html/tutoriales/tutorials.html" class="tutorials"
+            ><span
+              ><img
+                class="image-tutorials"
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material/24/tv--v1.png"
+                alt="tv--v1" /></span
+            >Tutoriales</a
+          >
+
+          <div class="container-publi">
+            <span
+              ><img
+                class="publicity"
+                src="/Pagine-main/images/image.png"
+                alt=""
+            /></span>
+          </div>
+          <div class="container-support">
+            <a class="support-adjustment" href="/profesor/html/support.html"
+              ><span
+                ><img
+                  class="image-holder"
+                  width="24"
+                  height="24"
+                  src="https://img.icons8.com/material/24/customer-support--v1.png"
+                  alt="customer-support--v1"
+              /></span>
+              Soporte</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <a class="button-back" href="/profesor/html/course-teacher.html">
+        <img
+          class="image"
+          width="50"
+          height="50"
+          src="https://img.icons8.com/ios-filled/50/back.png"
+          alt="back"
+        />
+      </a>
+      <div class="container-add-course">
+        <h1>Crear curso</h1>
+        <div class="container-form">
+          <form action="">
+            <label
+              >Nombre de Curso:
+              <input
+                class="name-course"
+                type="text"
+                name="name-cur"
+                placeholder="Ingrese el nombre del curso"
+              />
+              <span></span>
+            </label>
+
+            <label>
+              Descripcion:
+              <input
+                class="description"
+                type="text"
+                name="descrip"
+                placeholder="Ingrese una breve descripcion de lo que se trata el curso"
+              />
+              <span></span>
+            </label>
+            <label>
+              Duracion de curso:
+              <input type="date" />
+            </label>
+
+            <div class="button-add-student">
+              <button type="submit" class="add-student">Crear Curso</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h3>© 2023, Grupo MADI</h3>
+    </footer>
+
+    <script src="/profesor/js/add-course.js"></script>
+  </body>
+</html>
